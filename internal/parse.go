@@ -26,7 +26,7 @@ func StartParse(file_init_path string, limitlog int) {
 // ParseLogs чтение файла логов и запись в БД
 func ParseLogs(file_init *os.File, limitlog int) error {
 
-	cdn_path := "./cdn_file/cdn1.log"
+	cdn_path := "./cdn_file/cdn1.log"   
 
 	os.Create(cdn_path)
 	file_log, err := file_create_and_open(cdn_path)
